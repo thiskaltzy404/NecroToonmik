@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#05070d" />
+  <meta name="description" content="NecroToon — immersive manga, manhwa & manhua reader." />
+  <title>NecroToon — Read Beyond Worlds</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="aurora aurora-a"></div><div class="aurora aurora-b"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#home" aria-label="NecroToon home">
+      <img class="brand-mark" src="assets/logo-nt.png" alt="NT" />
+      <div><strong>NECRO<span>TOON</span></strong><small>READ BEYOND WORLDS</small></div>
+    </a>
+    <nav class="desktop-nav">
+      <a class="active" href="#home">Beranda</a><a href="#library">Pustaka</a><a href="#discover">Jelajah</a><a href="#ranking">Ranking</a><a href="#updates">Update</a>
+    </nav>
+    <div class="top-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+      <button class="profile" id="profileBtn"><span class="avatar">N</span><span class="profile-name">Guest</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span> THE NEXT GENERATION COMIC READER</div>
+        <h1>Stories that<br/><em>move with you.</em></h1>
+        <p>Temukan manga, manhwa, dan manhua favoritmu dalam pengalaman membaca yang cepat, cinematic, dan terasa hidup.</p>
+        <div class="hero-cta"><a class="btn primary" href="#updates">Mulai Membaca <span>→</span></a><button class="btn ghost" id="tourBtn">Lihat fitur <span>✦</span></button></div>
+        <div class="hero-stats"><div><b>24K+</b><span>Judul</span></div><div><b>1.8M</b><span>Chapter</span></div><div><b>99.9%</b><span>Uptime</span></div></div>
+      </div>
+      <div class="hero-stage reveal">
+        <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+        <div class="hero-card hero-card-back"><span>NEW</span><b>VOID<br/>EMPEROR</b></div>
+        <div class="hero-card hero-card-main">
+          <div class="cover-art cover-void"><span class="cover-badge">#1 THIS WEEK</span><div class="cover-title">VOID<br/><i>EMPEROR</i></div><div class="cover-sub">THE LAST NECROMANCER</div></div>
+          <div class="hero-card-info"><div><small>Chapter 184</small><h3>Void Emperor</h3><p>Fantasy · Action</p></div><button class="round-play" id="heroRead">▶</button></div>
+        </div>
+        <div class="float-pill pill-a">⚡ 12.4K reading now</div><div class="float-pill pill-b">★ 4.9 / 5.0</div>
+      </div>
+    </section>
+
+    <section class="continue section" id="library">
+      <div class="section-head reveal"><div><span class="kicker">YOUR JOURNEY</span><h2>Lanjutkan membaca</h2></div><a href="#discover">Lihat semua →</a></div>
+      <div class="continue-card reveal">
+        <div class="mini-cover cover-cyber"><span>CYBER<br/>REQUIEM</span></div>
+        <div class="continue-info"><div class="row"><div><h3>Cyber Requiem</h3><p>Chapter 76 · 68% selesai</p></div><button class="heart">♡</button></div><div class="progress"><span style="width:68%"></span></div><div class="row small"><span>Terakhir dibaca 18 menit lalu</span><button class="continue-btn" data-reader="Cyber Requiem">Lanjut →</button></div></div>
+        <div class="continue-visual"><div class="ring"><strong>68%</strong><span>progress</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="ranking">
+      <div class="section-head reveal"><div><span class="kicker">LIVE RANKING</span><h2>Yang sedang panas</h2></div><div class="segmented"><button class="active">Trending</button><button>Daily</button><button>Weekly</button></div></div>
+      <div class="ranking-grid" id="rankingGrid"></div>
+    </section>
+
+    <section class="discover section" id="discover">
+      <div class="discover-panel reveal"><div class="section-head"><div><span class="kicker">DISCOVER ENGINE</span><h2>Temukan dunia berikutnya</h2></div><button class="filter-btn" id="filterBtn">☷ Filter</button></div>
+        <div class="chips" id="chips"><button class="active" data-filter="all">Semua</button><button data-filter="action">Action</button><button data-filter="fantasy">Fantasy</button><button data-filter="romance">Romance</button><button data-filter="isekai">Isekai</button><button data-filter="comedy">Comedy</button><button data-filter="martial">Martial Arts</button></div>
+        <div class="discover-grid" id="discoverGrid"></div>
+      </div>
+    </section>
+
+    <section class="feature-strip section">
+      <div class="feature reveal"><span class="feature-icon">◈</span><div><h3>Smart Resume</h3><p>Posisi bacaan tersimpan presisi, bahkan setelah ganti mode.</p></div></div>
+      <div class="feature reveal"><span class="feature-icon">⌁</span><div><h3>Reader Sync</h3><p>Sinkronisasi library, bookmark, dan history lintas perangkat.</p></div></div>
+      <div class="feature reveal"><span class="feature-icon">⚡</span><div><h3>Instant Search</h3><p>Command palette untuk judul, genre, author, dan chapter.</p></div></div>
+      <div class="feature reveal"><span class="feature-icon">◐</span><div><h3>Focus Mode</h3><p>Reader tanpa distraksi dengan kontrol yang menghilang otomatis.</p></div></div>
+    </section>
+
+    <section class="section updates" id="updates">
+      <div class="section-head reveal"><div><span class="kicker">JUST DROPPED</span><h2>Update terbaru</h2></div><button class="link-btn">View all →</button></div>
+      <div class="updates-list" id="updatesList"></div>
+    </section>
+
+    <section class="section neon-cta reveal"><div class="cta-glow"></div><img src="assets/logo-necrotoon.png" alt="NecroToon"/><div><span class="kicker">WELCOME TO THE NEW ERA</span><h2>Read. Collect. Escape.</h2><p>Bangun library-mu sendiri dan biarkan NecroToon mengurus sisanya.</p></div><button class="btn primary" id="joinBtn">Create free account →</button></section>
+  </main>
+
+  <footer><div class="footer-brand"><img src="assets/logo-nt.png" alt="NT"/><div><b>NECROTOON</b><span>READ BEYOND WORLDS</span></div></div><div class="footer-links"><a>About</a><a>Discord</a><a>Privacy</a><a>Terms</a></div><span>© 2026 NecroToon</span></footer>
+
+  <div class="mobile-nav"><a href="#home" class="active">⌂<span>Home</span></a><a href="#discover">◉<span>Explore</span></a><button id="mobileSearch">⌕</button><a href="#library">▣<span>Library</span></a><button id="mobileProfile">◉<span>Profile</span></button></div>
+
+  <div class="modal" id="searchModal"><div class="modal-card search-card"><button class="modal-close">×</button><div class="search-big"><span>⌕</span><input id="searchInput" placeholder="Cari judul, author, genre..." autofocus /></div><div class="search-hints"><span>Try</span><button>One Piece</button><button>Fantasy</button><button>Latest chapter</button></div><div class="command-list"><div>↵ <span>Open selected</span><kbd>ENTER</kbd></div><div>↑↓ <span>Navigate</span><kbd>ARROW</kbd></div><div>ESC <span>Close</span><kbd>ESC</kbd></div></div></div></div>
+  <div class="modal" id="readerModal"><div class="modal-card reader-card"><button class="modal-close">×</button><div class="reader-top"><div><span class="kicker">DEMO READER</span><h2 id="readerTitle">Cyber Requiem</h2></div><div class="reader-controls"><button>−</button><span>100%</span><button>+</button><button>☰</button></div></div><div class="reader-canvas"><div class="reader-panel p1">THE CITY NEVER SLEEPS</div><div class="reader-panel p2">BUT SOME SHADOWS<br/><b>DO.</b></div><div class="reader-panel p3">CHAPTER 76<br/><span>THE SIGNAL</span></div></div><div class="reader-bottom"><span>Chapter 76 / 92</span><div class="reader-progress"><i></i></div><button class="btn primary">Next chapter →</button></div></div></div>
+  <div class="toast" id="toast"><span>✦</span><div><b id="toastTitle">Done</b><small id="toastText">Action completed.</small></div></div>
+  <div class="tour" id="tour"><div class="tour-card"><img src="assets/logo-necrotoon.png"/><h2>Welcome to NecroToon</h2><p>UI/UX baru dengan motion-first navigation, smart reader, personalized library, dan command search.</p><button class="btn primary" id="tourClose">Explore now →</button></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
